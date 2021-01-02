@@ -4,7 +4,7 @@ const users = [];
 /* GET users listing. */
 router.get('/', function(req, res, next) {
   res.send(users.sort((user1,user2)=>{
-    if (user1.score<user2){
+    if (user1.score<user2.score){
       return -1
     }
   if (user1.score>user2.score){
